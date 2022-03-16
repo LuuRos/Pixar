@@ -1,0 +1,331 @@
+:root{
+		--sizeS:  10px;
+    	--sizeM: 25px;
+    	--sizeL: 50px;
+    	--altonav: 10vh;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+	max-width: 1140px;
+	margin: auto;
+	width: 100%;
+}/*para que tenga referencia de ancho y 
+/*flex*/
+.flex {
+    display: flex;
+}
+.jbetween {
+    justify-content: space-between;
+}
+.acenter{
+    align-items: center;
+}
+.jcenter{
+	justify-content: center;
+}
+.jend{
+	justify-content: flex-end;
+}
+.jaround{
+	justify-content: space-around;
+}
+.jstretch{
+	justify-content: stretch;
+}
+.fwrap{
+	flex-wrap: wrap;
+}
+.fstart{
+	align-items: flex-start;
+}
+.cstart{
+	align-content: flex-start;
+}
+/*grid*/
+
+.lista{
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+}
+.lista li{
+	
+	font-weight: 500;
+}
+.lista li:not(:last-child){
+	margin-right: var(--sizeM);
+}
+.menu_principal{
+	margin: 50px 0;
+}
+li:hover{
+	color: lightgrey;
+	cursor: pointer;
+}
+.cabecera{
+	background-image: url(img/fondo.jpg);
+	max-width: 100%;
+	height: 700px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.logo.wrapper{
+	padding-right: 50px;
+}
+/* --imagenes abajo de cabecera --*/
+.caja{
+	gap: 30px; 
+}
+.caja img{
+	margin-top: 150px;
+	margin-bottom: 50px;
+	width: 100%;
+}
+.pie{
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+}
+/* --seccion redes sociales--*/
+.iconos{
+	margin: 100px;
+}
+.iconos i{
+	margin: 10px;
+	font-size: 25px;
+	text-decoration: none;
+	color: black;
+}
+.iconos:hover i{
+	color: lightgrey;
+}
+.iconos i:hover{
+	color: black;
+}
+.linea a {
+	text-decoration: none;
+	font-weight: 400;
+	color: black;
+	font-size: 14px;
+	letter-spacing: 4px;
+}
+.linea{
+	margin-bottom: 5px;
+}
+.barra {
+	font-weight: 400;
+	margin: 0px 5px 0px 5px;
+}
+.ultima_linea{
+	font-weight: 400;
+	margin: 10px 0 100px 0;
+	font-size: 14px;
+	letter-spacing: 4px;
+}
+/* -- submenu --*/
+.submenu{
+	list-style: none;
+	line-height: 30px;
+	position: absolute;
+}
+.submenu li{
+	color: white;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+}
+.submenu{
+	width: 250px;
+	display: none;
+	background-color: black;
+	
+}
+.short:hover .submenu{
+	display: block;
+	position:top 5px;
+	transition: 5s;
+	cursor: pointer;
+}
+.submenu li:hover {
+	color: grey;
+}
+/* para enlazar un html con otro y que cambie el estilo del enlace*/
+.submenu a{
+	text-decoration: none;
+	color: white;
+}
+.submenu a:hover {
+	color: grey;
+	cursor: pointer;
+}
+/*--responsive--*/
+.icono{
+	display: none;
+
+}
+
+
+/*--cars--*/
+.cabecera_cars{
+	background-image: url(img/fondocars.jpeg);
+	max-width: 100%;
+	height: 800px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.cabecera_cars h1{
+	text-transform: uppercase;
+	color: white;
+	font-size: 50px;
+	letter-spacing: 15px;
+}
+/*--- cuadricula--*/
+.cuadricula{
+	margin-top: 200px;
+	gap: 20px;
+	flex: 1;
+}
+.img img{
+	width: 100%;
+	
+}
+.img{
+	width: 20%;
+
+}
+.cuadricula h4{
+	font-size: 12px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-transform: inherit;
+	color: grey;
+}
+
+
+/* descripcion*/
+
+.descripcion{
+	padding-top: 100px;
+	width: 100%;
+} 
+.col{
+	flex: 1;
+}
+.mitad{
+	width: 100%;
+}
+.descripcion h1{
+	font-weight: 500;
+	font-size: 30px;
+}
+.descripcion p{
+	margin-top: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	color: grey;
+}
+.descripcion_text{
+	margin-left: 40px;
+}
+hr{
+	width: 150px;
+	border: 0.5px solid grey;
+}
+.lineas{
+	margin-top: 100px;
+}
+.descripcion_text_ultimo h2{
+	font-weight: 800;
+	color: gray;
+	margin-top: 40px;
+	font-size: 22px;
+	margin-left: 40px;
+}
+.descripcion_text_ultimo h1{
+	margin-left: 40px;
+}
+.descripcion_text_ultimo p{
+	margin-top: 15px;
+	margin-left: 40px;
+}
+@media(max-width: 1300px){
+	.wrapper{
+		width: 90%;
+	}
+	.imagen{
+		width: 100%;
+	}
+	.lista{
+		width: 100%;
+	}
+	
+}
+@media(max-width: 1000px){
+	.lista{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	li{
+		margin-top: 10px;
+		
+	}
+	.wrapper{
+		width: 90%;
+	}
+	.caja{
+		flex-wrap: wrap;
+		width: 100%;
+		gap: none;
+	}
+	.imagen{
+		width: 100%;
+	}
+	.descripcion{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.linea{
+		flex-direction: column;
+		text-align: center;
+	}
+}
+@media(max-width: 600px){
+	.lista li{
+		display: none;
+	}
+	.lista li:last-child{
+		display: block;
+	}
+	
+	.caja{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.imagen{
+		width: 100%;
+	}
+	/*responsive cars*/
+	.wrapper{
+		width: 80%;
+	}
+	.descripcion{
+		flex: 1;
+		justify-content: center;
+	}
+	.img {
+		width: 100%;
+	}
+
+	.cuadricula{
+		flex-direction: column;
+	}
+	.linea{
+		flex-direction: column;
+	}
+
+}
